@@ -1,0 +1,61 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Alinea el contenido al inicio (izquierda) */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 100vh; /* Asegura que el contenedor esté centrado verticalmente en la pantalla */
+}
+
+.container {
+  background-color: #ffffff;
+  max-width: 400px;
+  margin: 20px 0;
+  margin-left: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.file-input {
+  margin-bottom: 10px;
+}
+
+.file-input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+input[type="button"] {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+input[type="button"]:hover {
+  background-color: #0056b3;
+}

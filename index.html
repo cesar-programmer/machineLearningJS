@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Modelo Regresion </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importar TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4/dist/tf.min.js"></script>
+    <!-- Importar tfjs-vis  Visualizacion-->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+ 
+</head>
+
+<body>
+  <div class="container">
+    <h1>Mi Aplicación</h1>
+    <div class="file-input">
+        <label for="upload-json">JSON File</label>
+        <input type="file" id="upload-json" />
+    </div>
+    <div class="file-input">
+        <label for="upload-weights">Binary File</label>
+        <input type="file" id="upload-weights" />
+    </div>
+    <div class="buttons">
+        <input type="button" value="Cargar Modelo" onclick="cargarModelo();" />
+        <input type="button" value="Detener Entrenamiento" onclick="stopTraining=true;">
+        <input type="button" value="Guardar Modelo" onclick="guardarModelo();" />
+        <input type="button" value="Curva de Inferencia" onclick="mostrarCurvaInferencia();" />
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
